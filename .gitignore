@@ -1,0 +1,30 @@
+# Ignore KiCad backup and swap files
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.sch-bak
+*~
+*-backups
+*-bak
+
+# Ignore KiCad autosave files
+*.tmp
+*.sav
+
+# Ignore project specific configuration
+fp-info-cache
+sym-lib-table
+fp-lib-table
+
+# Ignore other temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# Ignore Other
+*.obsidian/
+
+# Ignore macOS system files
+.DS_Store
