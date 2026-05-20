@@ -6380,7 +6380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00505cd8-2574-4ea5-a689-d4933582db97")
-		(property "Reference" "A2"
+		(property "Reference" "A1"
 			(at 291.7033 156.21 0)
 			(effects
 				(font
@@ -6548,7 +6548,7 @@
 		(instances
 			(project ""
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/a4d66d05-b498-454f-8d54-68b671c284b9"
-					(reference "A2")
+					(reference "A1")
 					(unit 1)
 				)
 			)
@@ -6563,7 +6563,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "155aa232-36a9-47a6-968c-6144ddc74c2f")
-		(property "Reference" "SW1"
+		(property "Reference" "SW2"
 			(at 201.93 114.554 0)
 			(effects
 				(font
@@ -6633,7 +6633,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/a4d66d05-b498-454f-8d54-68b671c284b9"
-					(reference "SW1")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -7361,7 +7361,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b04f6117-23bd-4a2e-b01d-3d7dd7210b2e")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 65.532 120.142 0)
 			(effects
 				(font
@@ -7437,7 +7437,7 @@
 		(instances
 			(project ""
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/a4d66d05-b498-454f-8d54-68b671c284b9"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)

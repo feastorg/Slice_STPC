@@ -263,12 +263,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "pin_to_pin|1181100|1562100|d52a14bd-5c77-4db6-addb-aae48e568ff2|b8fc5111-a0a9-4c3d-9f46-867bc3c026ac|/66043bca-a260-4915-9fce-8a51d324c687/a4d66d05-b498-454f-8d54-68b671c284b9|/66043bca-a260-4915-9fce-8a51d324c687/a4d66d05-b498-454f-8d54-68b671c284b9|/66043bca-a260-4915-9fce-8a51d324c687/a4d66d05-b498-454f-8d54-68b671c284b9",
-        "False positive due to Pico pin definition"
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -733,6 +728,22 @@
     [
       "a4d66d05-b498-454f-8d54-68b671c284b9",
       "slice_template"
+    ],
+    [
+      "f4526ff2-fe07-4467-a937-911c014d52e3",
+      "Stepper_card"
+    ],
+    [
+      "f5513ef3-0e61-46f0-9947-38308ddef54a",
+      "Stepper_card1"
+    ],
+    [
+      "f619a8b7-4532-47fb-ad5f-06ccb6ce9665",
+      "Stepper_card2"
+    ],
+    [
+      "d8306a08-064c-4eaa-a20b-e93bd3d278a4",
+      "Stepper_card3"
     ]
   ],
   "text_variables": {}
