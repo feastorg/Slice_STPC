@@ -199,182 +199,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_SPDT"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPDT"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switch, single pole double throw"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_SPDT_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPDT_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers
@@ -1159,7 +983,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 180.34) (xy 157.48 182.88)
+			(xy 82.55 208.28) (xy 82.55 210.82)
 		)
 		(stroke
 			(width 0)
@@ -1718,6 +1542,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 203.2) (xy 82.55 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa41081a-9d06-48c5-9dc3-d688d288d520")
+	)
+	(wire
+		(pts
 			(xy 45.72 72.39) (xy 52.07 72.39)
 		)
 		(stroke
@@ -1789,16 +1623,6 @@
 			(color 194 0 194 1)
 		)
 		(uuid "b36fd50f-daad-4ee9-abb7-665e15ff27bf")
-	)
-	(wire
-		(pts
-			(xy 157.48 177.8) (xy 176.53 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3988408-edb2-4046-8b3b-3314cb81cfa3")
 	)
 	(wire
 		(pts
@@ -2491,17 +2315,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 152.4 177.8 0)
+		(at 77.47 205.74 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0c7248dc-8bd3-469b-8208-2a2e10bacb8b")
 		(property "Reference" "J1"
-			(at 152.4 171.45 0)
+			(at 77.47 203.454 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2509,15 +2332,16 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 152.4 173.99 0)
+			(at 77.47 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
-			(at 152.4 177.8 0)
+			(at 77.47 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2526,7 +2350,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 152.4 177.8 0)
+			(at 77.47 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2535,7 +2359,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 152.4 177.8 0)
+			(at 77.47 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3470,71 +3294,6 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 176.53 172.72 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a7a3bf45-63e3-4913-aa86-c7640a92e666")
-		(property "Reference" "#PWR013"
-			(at 180.34 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 172.974 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 176.53 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f5d2e0ad-24da-447b-9504-72f400332796")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
 		(at 143.51 105.41 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3600,7 +3359,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 186.69 175.26 270)
+		(at 82.55 203.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3608,7 +3367,7 @@
 		(dnp no)
 		(uuid "bcc1f94b-4f57-4dc5-a2d5-44e9aa0fc6c0")
 		(property "Reference" "#PWR014"
-			(at 182.88 175.26 0)
+			(at 82.55 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3617,7 +3376,7 @@
 			)
 		)
 		(property "Value" "VM"
-			(at 190.246 175.26 0)
+			(at 82.55 199.644 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3625,7 +3384,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 175.26 0)
+			(at 82.55 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3634,7 +3393,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 175.26 0)
+			(at 82.55 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3643,7 +3402,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 186.69 175.26 0)
+			(at 82.55 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3729,80 +3488,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 181.61 175.26 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e830421f-94b8-4439-9705-a050819981da")
-		(property "Reference" "SW1"
-			(at 181.61 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPDT"
-			(at 181.61 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
-			(at 181.61 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 181.61 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dcf7ca24-0cf3-4688-9d04-1b9bdc9eb1c7")
-		)
-		(pin "1"
-			(uuid "595f9273-03d2-4cd4-8d41-65c9bf314507")
-		)
-		(pin "3"
-			(uuid "f582e709-d90a-48a2-830a-2c44612f8b91")
-		)
-		(instances
-			(project ""
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 157.48 182.88 0)
+		(at 82.55 210.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3810,7 +3497,7 @@
 		(dnp no)
 		(uuid "f7a0de5c-172e-4336-9267-09a5e6a75e7e")
 		(property "Reference" "#PWR011"
-			(at 157.48 189.23 0)
+			(at 82.55 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3819,7 +3506,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 157.48 186.436 0)
+			(at 82.55 214.376 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3827,7 +3514,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 157.48 182.88 0)
+			(at 82.55 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3836,7 +3523,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 182.88 0)
+			(at 82.55 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3845,7 +3532,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 157.48 182.88 0)
+			(at 82.55 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
