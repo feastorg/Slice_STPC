@@ -1356,6 +1356,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 96.52) (xy 196.85 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76605f30-3149-42b0-a05c-0ab0fea5a0da")
+	)
+	(wire
+		(pts
 			(xy 163.83 106.68) (xy 163.83 109.22)
 		)
 		(stroke
@@ -1584,6 +1594,16 @@
 		)
 		(uuid "21f837ba-5654-4f8c-97cf-c741489b5402")
 	)
+	(label "nFAULT"
+		(at 180.34 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "31df530f-5b5e-4284-b7cb-8c5c4074e24b")
+	)
 	(label "CS"
 		(at 163.83 81.28 180)
 		(effects
@@ -1758,6 +1778,17 @@
 			(justify left)
 		)
 		(uuid "4c740a3b-d02a-4a94-addc-8a438d8dcffa")
+	)
+	(hierarchical_label "nFAULT"
+		(shape input)
+		(at 196.85 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "602686fc-2b6b-40af-a3eb-8a873c8ea673")
 	)
 	(hierarchical_label "GND"
 		(shape input)
