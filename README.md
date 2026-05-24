@@ -1,8 +1,8 @@
-# Slice Template
+# Slice STPC
 
 ## Introduction
 
-[Short introduction on the project.]
+Stepper motor controller Slice for the BREAD ecosystem.
 This slice is a carrier board for the [Stepper_card](https://github.com/IanVDS/stepper_card) board. It can carry up to four stepper cards, each with a DRV8825 stepper driver with microstepping and SPI pins for encoder reading.
 
 ## Usage

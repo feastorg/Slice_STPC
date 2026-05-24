@@ -4,7 +4,7 @@ description: "Index for KiBot-generated PCB artifacts."
 layout: "page"
 ---
 
-These are the docs & KiBot Outputs for Slice TEMP NANO S2L r2
+These are the docs & KiBot Outputs for Slice STPC
 
 The following files were generated from the latest PCB build:
 

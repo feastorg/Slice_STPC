@@ -1,4 +1,4 @@
-project_name: "Slice TEMP NANO S2L r2" # template: ensure this gets updated when copying
+project_name: "Slice STPC"
 output_dir: "Generated"
 artifacts:
   - Schematic.pdf

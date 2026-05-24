@@ -1,11 +1,10 @@
 ---
-title: "Slice TEMP NANO S2L r2 Documentation" # template: ensure this gets updated when copying
-description: "Overview and entry page for Slice TEMP NANO S2L r2 project documentation." # template: ensure this gets updated when copying
+title: "Slice STPC Documentation"
+description: "Overview and entry page for Slice STPC project documentation."
 nav_exclude: true
 ---
 
-<!-- template: ensure this gets updated when copying -->
-Welcome to the Slice TEMPlate project documentation.
+Welcome to the Slice STPC project documentation.
 
 ## Board Renders
 
