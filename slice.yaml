@@ -1,0 +1,205 @@
+schema_version: "1.0"
+
+# ── Identity ──────────────────────────────────────────────────────────────────
+id: "slice-stpc"
+name: "Stepper Motor Controller Carrier"
+status: "concept"
+category: "actuation"
+
+summary: "Carrier for up to four Stepper_card modules (DRV8825) with SPI encoder feedback and RP2040 MCU."
+description: null
+
+# ── Versioning ────────────────────────────────────────────────────────────────
+version:
+  hardware: "0.1.0"
+  firmware: null
+  manifest: "0.1.0"
+
+# ── Compatibility ─────────────────────────────────────────────────────────────
+compatibility:
+  slice_spec: ">=0.1.0 <0.2.0"
+  crumbs_protocol: null
+  anolis_provider_api: null
+
+# ── Hardware ──────────────────────────────────────────────────────────────────
+hardware:
+  mcu:
+    type: "dev-board-socket"
+    form_factor: "pico"
+    primary: "RP2040"
+    supported:
+      - "RP2040"
+      - "RP2350"
+  primary_ic:
+    manufacturer: "Texas Instruments"
+    part_number: "DRV8825"
+  hw_gen_current: 1
+  hw_gen_supported: [1]
+  pcb:
+    layers: 4
+    thickness: "1.6mm"
+    copper_weight: "1oz"
+    dimensions: "70mm x 100mm"
+  connectors:
+    - ref: "J1"
+      type: "slice-bus-10pin"
+      purpose: "power-and-i2c"
+  mounting:
+    pattern: "slice-standard-v0"
+    hole_size: "M3"
+    inset: "5mm"
+  pcb_color_prototype: null
+  pcb_color_production: null
+  enclosure:
+    supported: false
+    path: null
+
+# ── Electrical ────────────────────────────────────────────────────────────────
+electrical:
+  input_voltage: "12V"
+  logic_voltage: "3.3V"
+  max_current: null
+  protection:
+    reverse_polarity: false
+    input_esd: false
+    fuse: false
+  isolation:
+    present: false
+
+# ── Interfaces ────────────────────────────────────────────────────────────────
+interfaces:
+  host:
+    type: "i2c"
+    address_default: null
+    address_configurable: true
+  data:
+    inputs:
+      - name: "ENC1"
+        type: "spi-encoder"
+      - name: "ENC2"
+        type: "spi-encoder"
+      - name: "ENC3"
+        type: "spi-encoder"
+      - name: "ENC4"
+        type: "spi-encoder"
+    outputs:
+      - name: "CH1"
+        type: "stepper-step-dir"
+      - name: "CH2"
+        type: "stepper-step-dir"
+      - name: "CH3"
+        type: "stepper-step-dir"
+      - name: "CH4"
+        type: "stepper-step-dir"
+
+# ── Capabilities ──────────────────────────────────────────────────────────────
+capabilities:
+  - id: "stepper_drive"
+    channels: 4
+    control_modes: ["position", "speed"]
+
+# ── Firmware ──────────────────────────────────────────────────────────────────
+firmware:
+  required: true
+  path: "firmware/"
+  language: "c++"
+  framework: "arduino"
+  targets:
+    - "pico"
+  lib_deps: []
+
+# ── Protocol ──────────────────────────────────────────────────────────────────
+protocol:
+  type: "i2c-custom"
+  discovery:
+    supported: false
+  commands: []
+
+# ── Software ──────────────────────────────────────────────────────────────────
+software: null
+
+# ── Artifacts ─────────────────────────────────────────────────────────────────
+artifacts:
+  schematic: "hardware/BREAD_Slice.kicad_sch"
+  pcb: "hardware/BREAD_Slice.kicad_pcb"
+  firmware: "firmware/"
+  docs: null
+  bom: null
+  gerbers: null
+  pick_and_place: null
+  datasheets: []
+
+# ── Manufacturing ─────────────────────────────────────────────────────────────
+manufacturing:
+  assembly_type: "manual"
+  preferred_fab: null
+  dnp_parts: []
+  critical_parts: []
+  substitutions_allowed: true
+
+# ── Validation ────────────────────────────────────────────────────────────────
+validation:
+  status: "not_validated"
+  tested_revisions: []
+  tests:
+    electrical: false
+    firmware: false
+    environmental: false
+    integration: false
+  known_issues:
+    - "3x DRC clearance violations (0.172mm actual vs 0.200mm netclass default)"
+    - "14x ERC errors (10 pin_not_connected, 1 power_pin_not_driven, 2 label_dangling, 1 pin_to_pin)"
+
+# ── Safety ────────────────────────────────────────────────────────────────────
+safety:
+  hazards: []
+  max_safe_voltage: "12V"
+  intended_environment: "lab"
+  not_for:
+    - "human safety critical systems"
+
+# ── Dependencies ──────────────────────────────────────────────────────────────
+dependencies:
+  hardware:
+    - name: "Stepper_card"
+      url: "https://github.com/IanVDS/stepper_card"
+      quantity: "1-4"
+  firmware_libraries: []
+  software_packages: []
+
+# ── Relations ─────────────────────────────────────────────────────────────────
+related:
+  supersedes: null
+  superseded_by: null
+  variants: []
+  compatible_slices:
+    - "slice-step"
+
+# ── Maintainers ───────────────────────────────────────────────────────────────
+maintainers:
+  - name: "Cameron Brooks"
+    role: "owner"
+
+# ── License ───────────────────────────────────────────────────────────────────
+license:
+  hardware: "CERN-OHL-S-2.0"
+  firmware: null
+  software: null
+  docs: "CC-BY-4.0"
+
+# ── Repository ────────────────────────────────────────────────────────────────
+repository:
+  url: "https://github.com/feastorg/Slice_STPC"
+
+# ── Metadata ──────────────────────────────────────────────────────────────────
+metadata:
+  created: "2026-06-11"
+  updated: "2026-06-11"
+  tags:
+    - "stepper-motor"
+    - "motion-control"
+    - "drv8825"
+    - "stepper-card"
+    - "rp2040"
+    - "pico"
+    - "spi-encoder"
