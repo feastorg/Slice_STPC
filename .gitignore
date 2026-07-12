@@ -28,3 +28,8 @@ fp-lib-table
 
 # Ignore macOS system files
 .DS_Store
+
+# KiCad 10 local history: a nested git repo (git_repository_init on
+# <project>/.history). The .gitignore KiCad writes inside it governs
+# KiCad's history repo, not this one. Committing it adds a broken gitlink.
+.history/
