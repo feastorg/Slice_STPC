@@ -9,7 +9,7 @@ Overview of the electrical, firmware, and mechanical design of this Slice.
 
 <!-- Briefly describe the function of the Slice -->
 
-This Slice is a stepper motor controller card for the BREAD ecosystem.
+This Slice is a stepper motor controller card for BREADS-compatible systems.
 
 ## 🔌 Interfaces
 
