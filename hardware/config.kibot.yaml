@@ -19,7 +19,7 @@ outputs:
       output: Schematic.pdf
 
   - name: "print_pcb"
-    comment: "Print F.Cu+Dwgs.User and B.Cu+Dwgs.User"
+    comment: "Print F.Cu, In1, In2, and B.Cu views with masks and silkscreens"
     type: pcb_print
     dir: .
     options:
@@ -33,6 +33,14 @@ outputs:
             - layer: F.Mask
               color: "#14332440"
             - layer: F.SilkS
+        - sheet: Inner Layer 1
+          layers:
+            - layer: Edge.Cuts
+            - In1.Cu
+        - sheet: Inner Layer 2
+          layers:
+            - layer: Edge.Cuts
+            - In2.Cu
         - sheet: Bottom
           mirror: true
           layers:
@@ -100,6 +108,10 @@ outputs:
     layers:
       - layer: F.Cu
         suffix: F_Cu
+      - layer: In1.Cu
+        suffix: In1_Cu
+      - layer: In2.Cu
+        suffix: In2_Cu
       - layer: B.Cu
         suffix: B_Cu
       - layer: F.Paste
@@ -150,8 +162,8 @@ outputs:
     type: position
     dir: Position
     options:
-      format: ASCII # CSV or ASCII format
-      units: millimeters # millimeters or inches
+      format: ASCII
+      units: millimeters
       separate_files_for_front_and_back: true
       only_smd: true
 
