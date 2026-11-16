@@ -412,7 +412,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "KMLib_Boards_Modules:RaspberryPi_Pico_THT"
+	(footprint "Module:RaspberryPi_Pico_Common_THT"
 		(layer "F.Cu")
 		(uuid "16045f62-f955-437b-9780-035ffbe129df")
 		(at 130.69 157.1375 180)

@@ -6674,7 +6674,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "KMLib_Boards_Modules:RaspberryPi_Pico_THT"
+		(property "Footprint" "Module:RaspberryPi_Pico_Common_THT"
 			(at 289.56 168.91 0)
 			(hide yes)
 			(show_name no)
