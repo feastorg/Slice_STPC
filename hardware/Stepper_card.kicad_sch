@@ -1072,6 +1072,30 @@
 		)
 		(uuid "fa6dd40e-88d0-4bd7-9765-1b3f8e0e3568")
 	)
+	(no_connect
+		(at 132.08 81.28)
+		(uuid "ff85ad3b-ae7c-4312-982f-5b6d8e29fca9")
+	)
+	(no_connect
+		(at 132.08 91.44)
+		(uuid "100c2121-134e-487c-bf9c-09ba1e18fd67")
+	)
+	(no_connect
+		(at 132.08 96.52)
+		(uuid "8458bb0a-dd00-4f86-b11e-df4ea260b8cf")
+	)
+	(no_connect
+		(at 132.08 99.06)
+		(uuid "f036d221-fbfa-436c-86ad-5c65065f7f19")
+	)
+	(no_connect
+		(at 157.48 96.52)
+		(uuid "638488bf-aa19-4c78-bbc6-6935b5ba559f")
+	)
+	(no_connect
+		(at 157.48 99.06)
+		(uuid "88403718-b2eb-4791-835b-dd6aade35eb7")
+	)
 	(junction
 		(at 163.83 119.38)
 		(diameter 0)
