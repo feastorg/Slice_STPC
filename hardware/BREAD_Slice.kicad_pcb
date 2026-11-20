@@ -350,68 +350,6 @@
 			)
 		)
 	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "1106f88a-baec-4e5f-9307-5468c4c8874c")
-		(at 105.5 109.065)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "5553bf4d-31f9-47a7-aac8-8a02ed734875")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "46def9f6-59f8-4b49-8216-1d2a54490773")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1a26cb70-ab7c-4ffd-9696-471d8a6dc664")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c1600857-5f6a-42db-8c28-3bff9696efbc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(duplicate_pad_numbers_are_jumpers no)
-		(pad "2" smd roundrect
-			(at 0 0 270)
-			(size 3.5 1.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.15625)
-			(net "GND")
-			(pintype "passive")
-			(uuid "f1b79c6f-2754-487c-9b74-791a2c069925")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "Module:RaspberryPi_Pico_Common_THT"
 		(layer "F.Cu")
 		(uuid "16045f62-f955-437b-9780-035ffbe129df")
@@ -11012,14 +10950,6 @@
 		(layer "F.Cu")
 		(net "GND")
 		(uuid "8a5d8f6e-47fe-4926-8d3a-18bdfed57162")
-	)
-	(segment
-		(start 105.5 109.065)
-		(end 105.5 111.265)
-		(width 1)
-		(layer "F.Cu")
-		(net "GND")
-		(uuid "d808a4f9-605e-48d4-9bbc-622272b65844")
 	)
 	(segment
 		(start 105.535 111.3)
