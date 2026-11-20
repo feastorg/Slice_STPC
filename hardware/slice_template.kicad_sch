@@ -5109,15 +5109,16 @@
 		)
 		(uuid "55444d0f-d9ad-446a-8a4f-4396bdcb5c23")
 	)
-	(label "ESTOP"
-		(at 243.84 106.68 0)
+	(hierarchical_label "ESTOP"
+		(shape output)
+		(at 243.84 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right)
 		)
-		(uuid "21640e1d-5977-43ba-ae12-2a6b37bbbe56")
+		(uuid "f5a33104-97d8-43b1-a00c-40820db3a454")
 	)
 	(wire
 		(pts
