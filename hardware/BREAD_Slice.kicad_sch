@@ -1416,13 +1416,23 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 49.53) (xy 52.07 49.53)
+			(xy 45.72 49.53) (xy 48.26 49.53)
 		)
 		(stroke
-			(width 0.2032)
+			(width 0)
 			(type default)
 		)
-		(uuid "697cd846-23f5-439e-af1d-d5fc08d16188")
+		(uuid "157442f0-fe0d-4606-a86c-f2823698fe93")
+	)
+	(wire
+		(pts
+			(xy 48.26 49.53) (xy 52.07 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dea226c1-a535-4399-afd4-ea2bd2079ed5")
 	)
 	(wire
 		(pts
@@ -5126,6 +5136,83 @@
 	(sheet_instances
 		(path "/"
 			(page "1")
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 48.26 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c94c7715-ceaa-4cf2-8dee-87ac45e89b86")
+		(property "Reference" "#FLG06"
+			(at 48.26 47.625 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 48.26 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 48.26 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f21f0365-75ba-419f-9663-5f86e951edd3")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "#FLG06")
+					(unit 1)
+				)
+			)
 		)
 	)
 )
