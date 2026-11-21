@@ -60,7 +60,7 @@ electrical:
   logic_voltage: "3.3V"
   max_current: null
   protection:
-    reverse_polarity: false
+    reverse_polarity: true
     input_esd: false
     fuse: false
   isolation:

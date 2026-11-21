@@ -7,7 +7,11 @@ This Slice is a carrier board for the [Stepper_card](https://github.com/IanVDS/s
 
 ## Usage
 
-[Explain how to use the project. Include examples and screenshots if applicable.]
+- Motor supply: 12-24 V on J1, up to 6 A total for the four cards.
+- The motors only get power while the bus e-stop is high. A fault (over-current,
+  over-voltage) latches the supply off until the e-stop or the power is cycled;
+  GPIO5 reads low while latched.
+- The bus jumpers JP1-JP4 are bridged by default; cut one to isolate that bus line from the Pico.
 
 ## Documentation
 
