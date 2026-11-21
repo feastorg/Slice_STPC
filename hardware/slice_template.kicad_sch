@@ -6327,7 +6327,7 @@
 		)
 		(uuid "1ba0c2ac-bfdd-4f7f-8562-7928e28a010a")
 	)
-	(label "INT"
+	(label "SYNC"
 		(at 78.74 113.03 180)
 		(effects
 			(font
@@ -6357,7 +6357,7 @@
 		)
 		(uuid "20695408-a282-4b2b-b074-20adeed2a295")
 	)
-	(label "INT{slash}CAN_{CS}"
+	(label "SYNC{slash}CAN_{CS}"
 		(at 222.25 107.95 180)
 		(effects
 			(font
@@ -6377,7 +6377,7 @@
 		)
 		(uuid "3a7ccbf0-da9b-46ef-9f29-b386ea117699")
 	)
-	(label "INT{slash}CAN_{CS}"
+	(label "SYNC{slash}CAN_{CS}"
 		(at 325.12 134.62 180)
 		(effects
 			(font
@@ -6417,7 +6417,7 @@
 		)
 		(uuid "712340c4-ef8e-405e-b24b-7a0ef1731972")
 	)
-	(label "SYNC{slash}CAN_{INT}"
+	(label "INT{slash}CAN_{INT}"
 		(at 222.25 105.41 180)
 		(effects
 			(font
@@ -6477,7 +6477,7 @@
 		)
 		(uuid "b5ec7da3-7a24-4a1c-8995-50fd56d98c73")
 	)
-	(label "SYNC"
+	(label "INT"
 		(at 78.74 110.49 180)
 		(effects
 			(font
@@ -6497,7 +6497,7 @@
 		)
 		(uuid "c0811979-af05-48f7-8acc-b2ad37e2ce68")
 	)
-	(label "SYNC{slash}CAN_{INT}"
+	(label "INT{slash}CAN_{INT}"
 		(at 325.12 124.46 180)
 		(effects
 			(font
@@ -8995,7 +8995,7 @@
 				)
 			)
 		)
-		(property "Value" "SYNC bus link"
+		(property "Value" "INT bus link"
 			(at 201.93 107.41 0)
 			(hide yes)
 			(show_name no)
@@ -9028,7 +9028,7 @@
 				)
 			)
 		)
-		(property "Description" "Bridged = bus SYNC to the MCU (I2C); cut for CAN"
+		(property "Description" "Bridged = bus INT to the MCU (I2C); cut for CAN"
 			(at 201.93 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -9096,7 +9096,7 @@
 				)
 			)
 		)
-		(property "Value" "INT bus link"
+		(property "Value" "SYNC bus link"
 			(at 201.93 109.95 0)
 			(hide yes)
 			(show_name no)
@@ -9129,7 +9129,7 @@
 				)
 			)
 		)
-		(property "Description" "Bridged = bus INT to the MCU (I2C); cut for CAN"
+		(property "Description" "Bridged = bus SYNC to the MCU (I2C); cut for CAN"
 			(at 201.93 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -9175,9 +9175,9 @@
 		)
 		(uuid "7029035e-d829-4e1d-9982-5213497c14c8")
 	)
-	(text "JP1-JP4, top to bottom: I2C_CLK, I2C_DAT, SYNC, INT.\nBridged (default) = I2C; cut all four for CAN."
+	(text "JP1-JP4, top to bottom:\nI2C_CLK, I2C_DAT, INT, SYNC.\nBridged (default) = I2C;\ncut all four for CAN."
 		(exclude_from_sim no)
-		(at 201.93 111.76 0)
+		(at 210.82 116.84 0)
 		(effects
 			(font
 				(size 1 1)
