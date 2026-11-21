@@ -1768,7 +1768,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/slice_template/INT{slash}CAN_{INT}")
+			(net "/slice_template/INT{slash}GPIO22")
 			(pinfunction "GPIO22")
 			(pintype "bidirectional")
 			(uuid "02abf3a9-de7e-477d-bd82-b0ae8e893f51")
@@ -1790,7 +1790,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/slice_template/SYNC{slash}CAN_{CS}")
+			(net "/slice_template/SYNC{slash}GPIO26")
 			(pinfunction "GPIO26_ADC0")
 			(pintype "bidirectional")
 			(uuid "b38d08eb-76b2-49f2-9800-c09b9a53e988")
@@ -2943,7 +2943,7 @@
 				)
 			)
 		)
-		(property "Description" "Bridged = bus I2C_DAT to the MCU (I2C); cut for CAN"
+		(property "Description" "Bridged = bus I2C_DAT to the MCU; cut to isolate it"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6873,7 +6873,7 @@
 				)
 			)
 		)
-		(property "Description" "Bridged = bus SYNC to the MCU (I2C); cut for CAN"
+		(property "Description" "Bridged = bus SYNC to the MCU; cut to isolate it"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7078,7 +7078,7 @@
 			(at 0.65 0)
 			(size 1 0.5)
 			(layers "F.Cu" "F.Mask")
-			(net "/slice_template/SYNC{slash}CAN_{CS}")
+			(net "/slice_template/SYNC{slash}GPIO26")
 			(zone_connect 2)
 			(thermal_bridge_angle 45)
 			(options
@@ -8169,7 +8169,7 @@
 				)
 			)
 		)
-		(property "Description" "Bridged = bus I2C_CLK to the MCU (I2C); cut for CAN"
+		(property "Description" "Bridged = bus I2C_CLK to the MCU; cut to isolate it"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12356,7 +12356,7 @@
 				)
 			)
 		)
-		(property "Description" "Bridged = bus INT to the MCU (I2C); cut for CAN"
+		(property "Description" "Bridged = bus INT to the MCU; cut to isolate it"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12561,7 +12561,7 @@
 			(at 0.65 0)
 			(size 1 0.5)
 			(layers "F.Cu" "F.Mask")
-			(net "/slice_template/INT{slash}CAN_{INT}")
+			(net "/slice_template/INT{slash}GPIO22")
 			(zone_connect 2)
 			(thermal_bridge_angle 45)
 			(options
@@ -17561,7 +17561,7 @@
 		(end 107.41 119.545)
 		(width 0.3)
 		(layer "F.Cu")
-		(net "/slice_template/INT{slash}CAN_{INT}")
+		(net "/slice_template/INT{slash}GPIO22")
 		(uuid "4ed66653-d0dc-4464-92f7-eb54ff383010")
 	)
 	(segment
@@ -17569,7 +17569,7 @@
 		(end 107.41 119.545)
 		(width 0.5)
 		(layer "F.Cu")
-		(net "/slice_template/INT{slash}CAN_{INT}")
+		(net "/slice_template/INT{slash}GPIO22")
 		(uuid "723a9e87-07ba-47f4-a1d2-0a7aa676d7d2")
 	)
 	(segment
@@ -17577,7 +17577,7 @@
 		(end 109.2 125.4875)
 		(width 0.5)
 		(layer "F.Cu")
-		(net "/slice_template/INT{slash}CAN_{INT}")
+		(net "/slice_template/INT{slash}GPIO22")
 		(uuid "855dd6e6-4a8a-4496-8923-cef3817b4394")
 	)
 	(segment
@@ -17585,7 +17585,7 @@
 		(end 109.2 121.335)
 		(width 0.5)
 		(layer "F.Cu")
-		(net "/slice_template/INT{slash}CAN_{INT}")
+		(net "/slice_template/INT{slash}GPIO22")
 		(uuid "e6eceddf-989a-415b-a5f3-5be924630ec2")
 	)
 	(segment
@@ -17593,7 +17593,7 @@
 		(end 107.41 128.7775)
 		(width 0.5)
 		(layer "F.Cu")
-		(net "/slice_template/SYNC{slash}CAN_{CS}")
+		(net "/slice_template/SYNC{slash}GPIO26")
 		(uuid "29d4c363-683f-4239-b6b2-da3b6fa6699d")
 	)
 	(segment
@@ -17601,7 +17601,7 @@
 		(end 107.41 122.085)
 		(width 0.5)
 		(layer "F.Cu")
-		(net "/slice_template/SYNC{slash}CAN_{CS}")
+		(net "/slice_template/SYNC{slash}GPIO26")
 		(uuid "854c26d3-0799-4aad-8c43-233ee3019c37")
 	)
 	(segment
@@ -17609,7 +17609,7 @@
 		(end 107.41 122.085)
 		(width 0.3)
 		(layer "F.Cu")
-		(net "/slice_template/SYNC{slash}CAN_{CS}")
+		(net "/slice_template/SYNC{slash}GPIO26")
 		(uuid "fbb7df99-132d-4e32-8eff-1c781dc61523")
 	)
 	(segment
