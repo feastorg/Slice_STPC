@@ -158,7 +158,7 @@
 		(tags "resistor handsolder")
 		(property "Reference" "R6"
 			(at -2.524 0 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "1311f2f9-6579-43eb-9c9e-6cea9a96c99d")
 			(effects
 				(font
@@ -508,7 +508,7 @@
 		(tags "capacitor handsolder")
 		(property "Reference" "C10"
 			(at 0 -1.38 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "afb90807-4bfe-484a-a0db-0c3bfee52f16")
 			(effects
 				(font
@@ -2171,7 +2171,7 @@
 		(descr "SMD capacitor, aluminum electrolytic, Nichicon, 6.3x7.7mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C5"
-			(at 0 -4.35 90)
+			(at 0 1.4 90)
 			(layer "F.SilkS")
 			(uuid "0d5ecac0-48ed-46fa-a30b-d405f992d715")
 			(effects
@@ -3188,7 +3188,7 @@
 		(tags "resistor handsolder")
 		(property "Reference" "R5"
 			(at -2.524 0 180)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "09823458-3f6f-4e35-88df-d18c4801c04e")
 			(effects
 				(font
@@ -3974,7 +3974,7 @@
 		(tags "resistor handsolder")
 		(property "Reference" "R3"
 			(at 0 1.38 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "18cf8d8f-6795-4802-b028-4e2cba5de016")
 			(effects
 				(font
@@ -4603,7 +4603,7 @@
 		(tags "resistor handsolder")
 		(property "Reference" "R4"
 			(at 0 -1.38 180)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "2558c43a-71e3-4f48-8d29-5f9663d10fab")
 			(effects
 				(font
@@ -4752,7 +4752,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C7"
-			(at 0 -1.38 0)
+			(at 0 1.3 0)
 			(layer "F.SilkS")
 			(uuid "700cb8f8-046b-4124-9650-f2616bc245cf")
 			(effects
@@ -5053,7 +5053,7 @@
 		(tags "resistor handsolder")
 		(property "Reference" "R9"
 			(at -2.524 0 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "75a85c72-4a36-49fe-afea-4bd060e0946a")
 			(effects
 				(font
@@ -5203,7 +5203,7 @@
 		(descr "Through hole angled socket strip, 1x10, 2.54mm pitch, 8.51mm socket length, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole angled socket strip THT 1x10 2.54mm single row")
 		(property "Reference" "J2"
-			(at -4.38 -2.77 0)
+			(at 0 -2.24 0)
 			(layer "F.SilkS")
 			(uuid "9601023c-f6e6-483f-8b28-2df4aaf11793")
 			(effects
@@ -6689,7 +6689,7 @@
 		(tags "resistor handsolder")
 		(property "Reference" "R7"
 			(at 0 1.38 180)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "258f9e09-b89b-4507-acfb-54f17f9405f4")
 			(effects
 				(font
@@ -7118,7 +7118,7 @@
 		(tags "capacitor handsolder")
 		(property "Reference" "C9"
 			(at 2.3 0 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "219b9dfb-4656-490b-8fcd-f34922065d04")
 			(effects
 				(font
@@ -8414,7 +8414,7 @@
 		(tags "resistor handsolder")
 		(property "Reference" "R8"
 			(at -2.524 0 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "cc5d0a3e-6b89-41ad-8ef0-2702153af673")
 			(effects
 				(font
@@ -14034,7 +14034,7 @@
 		(tags "capacitor")
 		(property "Reference" "C1"
 			(at 0 1.85 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
 			(uuid "9d7c7580-a5f5-4b6b-a158-0020e443a246")
 			(effects
 				(font
@@ -14886,7 +14886,7 @@
 		)
 	)
 	(gr_text "JP1-JP4\nI2C"
-		(at 99.8 118.275 90)
+		(at 103.1 124.4 0)
 		(layer "F.SilkS")
 		(uuid "ca374c90-c340-4c97-8c7e-874c531cacb8")
 		(effects
@@ -14908,7 +14908,7 @@
 			)
 		)
 	)
-	(gr_text "BREAD Slice\nTemplate\nSLC_TEMP\nR1 05-2026"
+	(gr_text "BREAD Slice\nStepper\nSLC_STPC\nR2 11-2026"
 		(at 94.8 126.2 270)
 		(layer "F.SilkS")
 		(uuid "5abfd3cf-8b82-409d-b0dd-ab0b45a460bd")
